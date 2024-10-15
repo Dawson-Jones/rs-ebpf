@@ -1,0 +1,18 @@
+[package]
+name = "xdp_forward"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+libbpf-rs = "0.21"
+libc = "0.2"
+nix = { version = "0.26", default-features = false, features = ["net", "user"] }
+clap = { version = "4.0.32", default-features = false, features = ["std", "derive", "help", "usage"] }
+log = "0.4.20"
+ctrlc = "3.2"
+
+[build-dependencies]
+libbpf-cargo = "0.21"
