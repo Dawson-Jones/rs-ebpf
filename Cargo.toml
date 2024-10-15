@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2" 
+members = [
+    "tc_port_whitelist",
+    "tproxy",
+    "xdp_forward",
+    "kprobe",
+    "bpf-sys"
+]
